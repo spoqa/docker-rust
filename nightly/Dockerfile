@@ -10,7 +10,6 @@ RUN apt-get -y update && apt-get install -q -y \
     build-essential \
     curl \
     git-core \
-    libssl-dev \
     openssh \
     && \
 

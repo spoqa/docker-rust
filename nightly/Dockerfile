@@ -7,7 +7,7 @@ WORKDIR /rust
 RUN apt-get -y update && apt-get install -q -y \
     build-essential \
     curl \
-    openssl && \
+    libssl-dev && \
     curl -LO "https://static.rust-lang.org/dist/${RUST_DISTRIB}.tar.xz" && \
     tar xvJf "${RUST_DISTRIB}.tar.xz" && \
     "${RUST_DISTRIB}/install.sh" --components="rustc,cargo,rust-std-${RUST_TARGET}" && \

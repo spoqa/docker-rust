@@ -9,7 +9,10 @@ WORKDIR /rust
 RUN apt-get -y update && apt-get install -q -y \
     build-essential \
     curl \
-    libssl-dev && \
+    git-core \
+    libssl-dev \
+    openssh \
+    && \
 
     curl -LO "https://static.rust-lang.org/dist/${RUST_DISTRIB}.tar.xz" && \
     tar xvJf "${RUST_DISTRIB}.tar.xz" && \

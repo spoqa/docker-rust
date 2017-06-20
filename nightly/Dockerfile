@@ -22,4 +22,7 @@ RUN apt-get -y update && apt-get install -q -y \
     tar -xz -C /tmp -f "/tmp/docker-${DOCKER_VERSION}.tgz" && \
     mv /tmp/docker/* /usr/bin
 
+ENV PATH "$PATH:/root/.cargo/bin"
+RUN cargo install rustfmt-nightly
+
 WORKDIR /

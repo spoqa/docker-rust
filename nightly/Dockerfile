@@ -10,7 +10,7 @@ RUN apt-get -y update && apt-get install -q -y \
     build-essential \
     curl \
     git-core \
-    openssh \
+    openssh-client \
     && \
 
     curl -LO "https://static.rust-lang.org/dist/${RUST_DISTRIB}.tar.xz" && \

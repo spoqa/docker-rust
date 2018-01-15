@@ -23,6 +23,6 @@ RUN apt-get -y update && apt-get install -q -y \
     mv /tmp/docker/* /usr/bin
 
 ENV PATH "$PATH:/root/.cargo/bin"
-RUN cargo install rustfmt-nightly
+RUN rustup component add rustfmt-preview
 
 WORKDIR /

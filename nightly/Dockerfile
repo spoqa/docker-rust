@@ -20,6 +20,5 @@ RUN apt-get -y update && apt-get install -q -y \
     mv /tmp/docker/* /usr/bin
 
 ENV PATH "$PATH:/root/.cargo/bin"
-RUN rustup component add rustfmt-preview
 
 WORKDIR /

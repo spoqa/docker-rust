@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:17.10
 
 ENV RUST_TARGET x86_64-unknown-linux-gnu
 ENV RUST_DISTRIB rust-nightly-$RUST_TARGET
